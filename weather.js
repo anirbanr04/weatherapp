@@ -33,17 +33,17 @@ console.log(data);
 let temp=data.main.temp;
 if(temp>=29){
     let imageicon=document.querySelector(".imageicon img");
-    let img="..//weather-app-img/images/clear.png"
+    let img="./weather-app-img/images/clear.png"
     imageicon.src=img;
 }
 if(temp>=20&&temp<29){
     let imageicon=document.querySelector(".imageicon img");
-    let imgs="..//weather-app-img/images/clouds.png"
+    let imgs="./weather-app-img/images/clouds.png"
     imageicon.src=imgs;
 }
 if(temp<20){
     let imageicon=document.querySelector(".imageicon img");
-    let imgg="..//weather-app-img/images/snow.png"
+    let imgg="./weather-app-img/images/snow.png"
     imageicon.src=imgg;
 }
 temptxt.innerHTML=`${temp}°C`;
